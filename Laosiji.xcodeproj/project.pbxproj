@@ -19,6 +19,7 @@
 		B329B6621D025BAD004B1EB0 /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B329B65F1D025BAD004B1EB0 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B329B6631D025BAD004B1EB0 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B329B6601D025BAD004B1EB0 /* ObjectMapper.framework */; };
 		B329B6641D025BAD004B1EB0 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B329B6601D025BAD004B1EB0 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B329B6661D025C0D004B1EB0 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B329B6651D025C0D004B1EB0 /* Tag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,7 @@
 		B329B65D1D0256E8004B1EB0 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		B329B65F1D025BAD004B1EB0 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/tvOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
 		B329B6601D025BAD004B1EB0 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/tvOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		B329B6651D025C0D004B1EB0 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				B329B6511D024CE8004B1EB0 /* Assets.xcassets */,
 				B329B6531D024CE8004B1EB0 /* Info.plist */,
 				B329B65D1D0256E8004B1EB0 /* API.swift */,
+				B329B6651D025C0D004B1EB0 /* Tag.swift */,
 			);
 			path = Laosiji;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B329B64D1D024CE8004B1EB0 /* SecondViewController.swift in Sources */,
+				B329B6661D025C0D004B1EB0 /* Tag.swift in Sources */,
 				B329B6491D024CE8004B1EB0 /* AppDelegate.swift in Sources */,
 				B329B65E1D0256E8004B1EB0 /* API.swift in Sources */,
 				B329B64B1D024CE8004B1EB0 /* FirstViewController.swift in Sources */,
