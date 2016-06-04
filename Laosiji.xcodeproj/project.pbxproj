@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B31B06581D02698400BADB46 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31B06551D02698400BADB46 /* RxBlocking.framework */; };
+		B31B06591D02698400BADB46 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B31B06551D02698400BADB46 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B31B065A1D02698400BADB46 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31B06561D02698400BADB46 /* RxCocoa.framework */; };
+		B31B065B1D02698400BADB46 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B31B06561D02698400BADB46 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B31B065C1D02698400BADB46 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31B06571D02698400BADB46 /* RxSwift.framework */; };
+		B31B065D1D02698400BADB46 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B31B06571D02698400BADB46 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B329B6491D024CE8004B1EB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B329B6481D024CE8004B1EB0 /* AppDelegate.swift */; };
 		B329B64B1D024CE8004B1EB0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B329B64A1D024CE8004B1EB0 /* FirstViewController.swift */; };
 		B329B64D1D024CE8004B1EB0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B329B64C1D024CE8004B1EB0 /* SecondViewController.swift */; };
@@ -31,7 +37,10 @@
 			files = (
 				B329B6641D025BAD004B1EB0 /* ObjectMapper.framework in Embed Frameworks */,
 				B329B65B1D024E5D004B1EB0 /* Alamofire.framework in Embed Frameworks */,
+				B31B065D1D02698400BADB46 /* RxSwift.framework in Embed Frameworks */,
 				B329B6621D025BAD004B1EB0 /* AlamofireObjectMapper.framework in Embed Frameworks */,
+				B31B065B1D02698400BADB46 /* RxCocoa.framework in Embed Frameworks */,
+				B31B06591D02698400BADB46 /* RxBlocking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,6 +48,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B31B06551D02698400BADB46 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/tvOS/RxBlocking.framework; sourceTree = "<group>"; };
+		B31B06561D02698400BADB46 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/tvOS/RxCocoa.framework; sourceTree = "<group>"; };
+		B31B06571D02698400BADB46 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/tvOS/RxSwift.framework; sourceTree = "<group>"; };
 		B329B6451D024CE8004B1EB0 /* Laosiji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Laosiji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B329B6481D024CE8004B1EB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B329B64A1D024CE8004B1EB0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +72,10 @@
 			files = (
 				B329B6631D025BAD004B1EB0 /* ObjectMapper.framework in Frameworks */,
 				B329B65A1D024E5D004B1EB0 /* Alamofire.framework in Frameworks */,
+				B31B065C1D02698400BADB46 /* RxSwift.framework in Frameworks */,
 				B329B6611D025BAD004B1EB0 /* AlamofireObjectMapper.framework in Frameworks */,
+				B31B065A1D02698400BADB46 /* RxCocoa.framework in Frameworks */,
+				B31B06581D02698400BADB46 /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +85,9 @@
 		B329B63C1D024CE8004B1EB0 = {
 			isa = PBXGroup;
 			children = (
+				B31B06551D02698400BADB46 /* RxBlocking.framework */,
+				B31B06561D02698400BADB46 /* RxCocoa.framework */,
+				B31B06571D02698400BADB46 /* RxSwift.framework */,
 				B329B65F1D025BAD004B1EB0 /* AlamofireObjectMapper.framework */,
 				B329B6601D025BAD004B1EB0 /* ObjectMapper.framework */,
 				B329B6591D024E5D004B1EB0 /* Alamofire.framework */,
@@ -328,6 +346,7 @@
 				B329B6581D024CE8004B1EB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
