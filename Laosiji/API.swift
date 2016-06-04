@@ -8,6 +8,8 @@
 
 import Foundation
 import Alamofire
+import RxSwift
+import AlamofireObjectMapper
 
 struct API {
     
@@ -29,6 +31,20 @@ struct API {
             let encoding = Alamofire.ParameterEncoding.URL
             
             return encoding.encode(URLRequest, parameters: result.parameters).0
+        }
+    }
+    
+    static func getColumnDetail(column: String) -> Observable<[Tag]> {
+        return Observable.create { observer in
+            let request = Alamofire.request(Router.GetColumnDetail(column: column)).responseArray(keyPath: "data") { (response: Response<[Tag], NSError>) in
+                if let tags = response.result.value {
+                    observer.on(.Next(tags))
+                }
+            }
+            request.resume()
+            return AnonymousDisposable {
+                request.cancel()
+            }
         }
     }
 }

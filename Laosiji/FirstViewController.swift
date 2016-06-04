@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import Alamofire
-import AlamofireObjectMapper
+import RxSwift
 
 class FirstViewController: UIViewController {
 
@@ -16,11 +15,9 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        Alamofire.request(API.Router.GetColumnDetail(column: "")).responseArray(keyPath: "data") { (response: Response<[Tag], NSError>) in
-            if let tags = response.result.value {
-                for tag in tags {
-                    print("\(tag.id) -> \(tag.name) \(tag.iconURL)")
-                }
+        _ = API.getColumnDetail("").subscribeNext { tags in
+            tags.forEach { tag in
+                print("\(tag.id) \(tag.name)")
             }
         }
     }
