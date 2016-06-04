@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import Alamofire
 
 class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        Alamofire.request(API.Router.GetColumnDetail(column: "")).response { (request, response, data, error) in
+            print(response)
+        }
     }
 
     override func didReceiveMemoryWarning() {
