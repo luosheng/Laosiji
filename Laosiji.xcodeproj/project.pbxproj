@@ -14,6 +14,7 @@
 		B329B6521D024CE8004B1EB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B329B6511D024CE8004B1EB0 /* Assets.xcassets */; };
 		B329B65A1D024E5D004B1EB0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B329B6591D024E5D004B1EB0 /* Alamofire.framework */; };
 		B329B65B1D024E5D004B1EB0 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B329B6591D024E5D004B1EB0 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B329B65E1D0256E8004B1EB0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B329B65D1D0256E8004B1EB0 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,7 @@
 		B329B6511D024CE8004B1EB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B329B6531D024CE8004B1EB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B329B6591D024E5D004B1EB0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/tvOS/Alamofire.framework; sourceTree = "<group>"; };
+		B329B65D1D0256E8004B1EB0 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				B329B64E1D024CE8004B1EB0 /* Main.storyboard */,
 				B329B6511D024CE8004B1EB0 /* Assets.xcassets */,
 				B329B6531D024CE8004B1EB0 /* Info.plist */,
+				B329B65D1D0256E8004B1EB0 /* API.swift */,
 			);
 			path = Laosiji;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			files = (
 				B329B64D1D024CE8004B1EB0 /* SecondViewController.swift in Sources */,
 				B329B6491D024CE8004B1EB0 /* AppDelegate.swift in Sources */,
+				B329B65E1D0256E8004B1EB0 /* API.swift in Sources */,
 				B329B64B1D024CE8004B1EB0 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
