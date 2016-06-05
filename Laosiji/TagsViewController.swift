@@ -58,10 +58,13 @@ class TagsViewController: UICollectionViewController {
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let tag = tags[indexPath.item]
         guard let tagID = tag.identifier else { return }
-        _ = API.fetchRoomsForTag(tagID).subscribeNext { rooms in
-            rooms.forEach { room in
-                print("\(room.identifier) -> \(room.name)")
+        _ = API.fetchRoomsForTag(tagID)
+            .flatMap { rooms -> Observable<Room> in
+                guard let roomID = rooms.first?.identifier else { return Observable.empty() }
+                return API.fetchRoomForID(roomID)
             }
-        }
+            .subscribeNext { room in
+                print(room.HTTPLiveStreamingURL)
+            }
     }
 }
