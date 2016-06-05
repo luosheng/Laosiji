@@ -8,7 +8,69 @@
 
 import Foundation
 import UIKit
+import DouyuAPI
 
-public class RoomsViewController: UICollectionViewController {
+class RoomsViewController: UICollectionViewController {
+    
+    let tagID: String
+    
+    var rooms: [Room] = [] {
+        didSet {
+            collectionView?.reloadData()
+        }
+    }
+    
+    init(tagID: String) {
+        self.tagID = tagID
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func viewDidLoad() {
+        collectionView?.registerClass(RoomViewCell.self, forCellWithReuseIdentifier: RoomViewCell.reuseIdentifier)
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: 320, height: 180)
+        collectionView?.collectionViewLayout = layout
+        
+        _ = API.fetchRoomsForTag(tagID).subscribeNext { rooms in
+            self.rooms = rooms
+        }
+    }
+    
+    // MARK: - UICollectionViewDataSource
+    
+    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.rooms.count
+    }
+    
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(RoomViewCell.reuseIdentifier, forIndexPath: indexPath)
+        return cell
+    }
+    
+    // MARK: - UICollectionViewDelegate
+    
+    override func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
+        guard let cell = cell as? RoomViewCell else {
+            return
+        }
+        let room = rooms[indexPath.item]
+        if let URL = room.src {
+            cell.imageView.af_setImageWithURL(URL)
+        }
+    }
+    
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        guard let roomID = rooms[indexPath.item].identifier else {
+            return
+        }
+        
+        let playerViewController = PlayerViewController(roomID: roomID)
+        self.presentViewController(playerViewController, animated: true, completion: nil)
+    }
     
 }

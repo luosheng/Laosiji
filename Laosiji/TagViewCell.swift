@@ -17,11 +17,9 @@ class TagViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor.redColor()
         
         imageView = UIImageView(frame: bounds)
         contentView.addSubview(imageView)
-        imageView.backgroundColor = UIColor.blueColor()
         imageView.adjustsImageWhenAncestorFocused = true
     }
     
