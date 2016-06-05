@@ -11,6 +11,7 @@ import Alamofire
 import RxSwift
 import AlamofireObjectMapper
 import ObjectMapper
+import CryptoSwift
 
 public struct API {
     
@@ -33,11 +34,22 @@ public struct API {
                 }
             }()
             
+            let timestamp = Int(NSDate().timeIntervalSince1970)
+            var path = "\(result.path)?aid=android&clientsys=android&time=\(timestamp)"
+            let auth = "\(path)1231".md5()
+            
+            var p = result.parameters
+            p["aid"] = "android"
+            p["clientsys"] = "android"
+            p["time"] = timestamp
+            p["auth"] = auth
+            
             let URL = NSURL(string: Router.baseURLString)!
             let URLRequest = NSURLRequest(URL: URL.URLByAppendingPathComponent(result.path))
             let encoding = Alamofire.ParameterEncoding.URL
             
-            return encoding.encode(URLRequest, parameters: result.parameters).0
+            let encoded = encoding.encode(URLRequest, parameters: p).0
+            return encoded
         }
     }
     
