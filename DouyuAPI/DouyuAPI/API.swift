@@ -19,6 +19,7 @@ public struct API {
         
         case TagsForColumn(column: String)
         case RoomsForTag(tagID: String)
+        case RoomForID(ID: String)
         
         var URLRequest: NSMutableURLRequest {
             let result: (path: String, parameters: [String: AnyObject]) = {
@@ -27,6 +28,8 @@ public struct API {
                     return ("getColumnDetail", ["shortName": column])
                 case .RoomsForTag(let tagID):
                     return ("live/\(tagID)", [:])
+                case .RoomForID(let ID):
+                    return ("room/\(ID)", [:])
                 }
             }()
             
@@ -48,6 +51,10 @@ public struct API {
     
     public static func fetchRoomsForTag(tagID: String) -> Observable<[Room]> {
         return requestArray(Router.RoomsForTag(tagID: tagID))
+    }
+    
+    public static func fetchRoomForID(ID: String) -> Observable<Room> {
+        return requestObject(Router.RoomForID(ID: ID))
     }
     
     private static func requestObject<T: Mappable>(router: Router) -> Observable<T> {
