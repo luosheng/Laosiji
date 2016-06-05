@@ -26,7 +26,7 @@ public struct API {
                 case .TagsForColumn(let column):
                     return ("getColumnDetail", ["shortName": column])
                 case .RoomsForTag(let tag):
-                    return ("live/\(tag.id!)", [:])
+                    return ("live/\(tag.identifier!)", [:])
                 }
             }()
             

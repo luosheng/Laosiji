@@ -59,7 +59,7 @@ class TagsViewController: UICollectionViewController {
         let tag = tags[indexPath.item]
         _ = API.fetchRoomsForTag(tag).subscribeNext { rooms in
             rooms.forEach { room in
-                print("\(room.id) -> \(room.name)")
+                print("\(room.identifier) -> \(room.name)")
             }
         }
     }

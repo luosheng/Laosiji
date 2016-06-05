@@ -11,7 +11,7 @@ import ObjectMapper
 
 public class Room: Mappable {
     
-    public var id: String?
+    public var identifier: String?
     public var src: String?
     public var name: String?
     public var nickName: String?
@@ -23,7 +23,7 @@ public class Room: Mappable {
     }
     
     public func mapping(map: Map) {
-        id <- map["room_id"]
+        identifier <- map["room_id"]
         src <- map["room_src"]
         name <- map["room_name"]
         nickName <- map["nickname"]

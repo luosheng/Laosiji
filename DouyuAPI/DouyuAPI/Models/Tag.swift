@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 
 public class Tag: Mappable {
-    public var id: String?
+    public var identifier: String?
     public var shortName: String?
     public var name: String?
     public var picName: String?
@@ -23,7 +23,7 @@ public class Tag: Mappable {
     }
     
     public func mapping(map: Map) {
-        id <- map["tag_id"]
+        identifier <- map["tag_id"]
         shortName <- map["short_name"]
         name <- map["tag_name"]
         picName <- map["pic_name"]
