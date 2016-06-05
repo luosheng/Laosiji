@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		B3DF2A011D04639800C5AB22 /* DouyuAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = B3DF2A001D04639800C5AB22 /* DouyuAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3DF2A0F1D0465CF00C5AB22 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A081D0465CF00C5AB22 /* Alamofire.framework */; };
+		B3DF2A101D0465CF00C5AB22 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A091D0465CF00C5AB22 /* AlamofireObjectMapper.framework */; };
+		B3DF2A111D0465CF00C5AB22 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A0A1D0465CF00C5AB22 /* ObjectMapper.framework */; };
+		B3DF2A121D0465CF00C5AB22 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A0B1D0465CF00C5AB22 /* RxBlocking.framework */; };
+		B3DF2A131D0465CF00C5AB22 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A0C1D0465CF00C5AB22 /* RxCocoa.framework */; };
+		B3DF2A141D0465CF00C5AB22 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A0D1D0465CF00C5AB22 /* RxSwift.framework */; };
+		B3DF2A151D0465CF00C5AB22 /* RxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A0E1D0465CF00C5AB22 /* RxTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B3DF29FD1D04639800C5AB22 /* DouyuAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DouyuAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3DF2A001D04639800C5AB22 /* DouyuAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DouyuAPI.h; sourceTree = "<group>"; };
 		B3DF2A021D04639800C5AB22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3DF2A081D0465CF00C5AB22 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/tvOS/Alamofire.framework; sourceTree = "<group>"; };
+		B3DF2A091D0465CF00C5AB22 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/tvOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
+		B3DF2A0A1D0465CF00C5AB22 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/tvOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		B3DF2A0B1D0465CF00C5AB22 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/tvOS/RxBlocking.framework; sourceTree = "<group>"; };
+		B3DF2A0C1D0465CF00C5AB22 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/tvOS/RxCocoa.framework; sourceTree = "<group>"; };
+		B3DF2A0D1D0465CF00C5AB22 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/tvOS/RxSwift.framework; sourceTree = "<group>"; };
+		B3DF2A0E1D0465CF00C5AB22 /* RxTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTests.framework; path = Carthage/Build/tvOS/RxTests.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +35,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DF2A0F1D0465CF00C5AB22 /* Alamofire.framework in Frameworks */,
+				B3DF2A101D0465CF00C5AB22 /* AlamofireObjectMapper.framework in Frameworks */,
+				B3DF2A111D0465CF00C5AB22 /* ObjectMapper.framework in Frameworks */,
+				B3DF2A121D0465CF00C5AB22 /* RxBlocking.framework in Frameworks */,
+				B3DF2A131D0465CF00C5AB22 /* RxCocoa.framework in Frameworks */,
+				B3DF2A141D0465CF00C5AB22 /* RxSwift.framework in Frameworks */,
+				B3DF2A151D0465CF00C5AB22 /* RxTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -31,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				B3DF29FF1D04639800C5AB22 /* DouyuAPI */,
+				B3DF2A161D0465D700C5AB22 /* Frameworks */,
 				B3DF29FE1D04639800C5AB22 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +72,20 @@
 				B3DF2A021D04639800C5AB22 /* Info.plist */,
 			);
 			path = DouyuAPI;
+			sourceTree = "<group>";
+		};
+		B3DF2A161D0465D700C5AB22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF2A081D0465CF00C5AB22 /* Alamofire.framework */,
+				B3DF2A091D0465CF00C5AB22 /* AlamofireObjectMapper.framework */,
+				B3DF2A0A1D0465CF00C5AB22 /* ObjectMapper.framework */,
+				B3DF2A0B1D0465CF00C5AB22 /* RxBlocking.framework */,
+				B3DF2A0C1D0465CF00C5AB22 /* RxCocoa.framework */,
+				B3DF2A0D1D0465CF00C5AB22 /* RxSwift.framework */,
+				B3DF2A0E1D0465CF00C5AB22 /* RxTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +268,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = DouyuAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -248,6 +288,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = DouyuAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
