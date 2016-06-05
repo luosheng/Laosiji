@@ -57,13 +57,11 @@ class TagsViewController: UICollectionViewController {
     }
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let tag = tags[indexPath.item]
-        guard let tagID = tag.identifier else { return }
-        _ = API.fetchRoomsForTag(tagID).subscribeNext { rooms in
-            if let roomID = rooms.first?.identifier {
-                let playerViewController = PlayerViewController(roomID: roomID)
-                self.presentViewController(playerViewController, animated: true, completion: nil)
-            }
+        guard let tagID = tags[indexPath.item].identifier else {
+            return
         }
+        
+        let roomsViewController = RoomsViewController(tagID: tagID)
+        self.presentViewController(roomsViewController, animated: true, completion: nil)
     }
 }
