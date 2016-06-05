@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import RxSwift
 import AlamofireImage
+import DouyuAPI
 
 class TagsViewController: UICollectionViewController {
     

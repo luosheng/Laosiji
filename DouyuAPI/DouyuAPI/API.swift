@@ -12,7 +12,7 @@ import RxSwift
 import AlamofireObjectMapper
 import ObjectMapper
 
-struct API {
+public struct API {
     
     enum Router: URLRequestConvertible {
         static let baseURLString = "http://capi.douyucdn.cn/api/v1/"
@@ -35,11 +35,11 @@ struct API {
         }
     }
     
-    static func fetchTagsForColumn(column: String) -> Observable<[Tag]> {
+    public static func fetchTagsForColumn(column: String) -> Observable<[Tag]> {
         return requestArray(Router.TagsForColumn(column: column))
     }
     
-    static func fetchAllTags() -> Observable<[Tag]> {
+    public static func fetchAllTags() -> Observable<[Tag]> {
         return fetchTagsForColumn("")
     }
     

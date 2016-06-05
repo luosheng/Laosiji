@@ -14,7 +14,8 @@
 		B3DF2A121D0465CF00C5AB22 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A0B1D0465CF00C5AB22 /* RxBlocking.framework */; };
 		B3DF2A131D0465CF00C5AB22 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A0C1D0465CF00C5AB22 /* RxCocoa.framework */; };
 		B3DF2A141D0465CF00C5AB22 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A0D1D0465CF00C5AB22 /* RxSwift.framework */; };
-		B3DF2A151D0465CF00C5AB22 /* RxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A0E1D0465CF00C5AB22 /* RxTests.framework */; };
+		B3DF2A221D0466FE00C5AB22 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF2A211D0466FE00C5AB22 /* API.swift */; };
+		B3DF2A251D04671A00C5AB22 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF2A241D04671A00C5AB22 /* Tag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		B3DF2A0B1D0465CF00C5AB22 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/tvOS/RxBlocking.framework; sourceTree = "<group>"; };
 		B3DF2A0C1D0465CF00C5AB22 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/tvOS/RxCocoa.framework; sourceTree = "<group>"; };
 		B3DF2A0D1D0465CF00C5AB22 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/tvOS/RxSwift.framework; sourceTree = "<group>"; };
-		B3DF2A0E1D0465CF00C5AB22 /* RxTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTests.framework; path = Carthage/Build/tvOS/RxTests.framework; sourceTree = "<group>"; };
+		B3DF2A211D0466FE00C5AB22 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B3DF2A241D04671A00C5AB22 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +43,6 @@
 				B3DF2A121D0465CF00C5AB22 /* RxBlocking.framework in Frameworks */,
 				B3DF2A131D0465CF00C5AB22 /* RxCocoa.framework in Frameworks */,
 				B3DF2A141D0465CF00C5AB22 /* RxSwift.framework in Frameworks */,
-				B3DF2A151D0465CF00C5AB22 /* RxTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +69,8 @@
 		B3DF29FF1D04639800C5AB22 /* DouyuAPI */ = {
 			isa = PBXGroup;
 			children = (
+				B3DF2A231D04671A00C5AB22 /* Models */,
+				B3DF2A211D0466FE00C5AB22 /* API.swift */,
 				B3DF2A001D04639800C5AB22 /* DouyuAPI.h */,
 				B3DF2A021D04639800C5AB22 /* Info.plist */,
 			);
@@ -83,9 +86,16 @@
 				B3DF2A0B1D0465CF00C5AB22 /* RxBlocking.framework */,
 				B3DF2A0C1D0465CF00C5AB22 /* RxCocoa.framework */,
 				B3DF2A0D1D0465CF00C5AB22 /* RxSwift.framework */,
-				B3DF2A0E1D0465CF00C5AB22 /* RxTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3DF2A231D04671A00C5AB22 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF2A241D04671A00C5AB22 /* Tag.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DF2A251D04671A00C5AB22 /* Tag.swift in Sources */,
+				B3DF2A221D0466FE00C5AB22 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +276,7 @@
 		B3DF2A061D04639800C5AB22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -278,12 +291,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.luosheng.DouyuAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		B3DF2A071D04639800C5AB22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -320,6 +335,7 @@
 				B3DF2A071D04639800C5AB22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

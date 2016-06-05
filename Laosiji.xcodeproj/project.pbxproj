@@ -7,43 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B31B06581D02698400BADB46 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31B06551D02698400BADB46 /* RxBlocking.framework */; };
-		B31B06591D02698400BADB46 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B31B06551D02698400BADB46 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B31B065A1D02698400BADB46 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31B06561D02698400BADB46 /* RxCocoa.framework */; };
-		B31B065B1D02698400BADB46 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B31B06561D02698400BADB46 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B31B065C1D02698400BADB46 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31B06571D02698400BADB46 /* RxSwift.framework */; };
-		B31B065D1D02698400BADB46 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B31B06571D02698400BADB46 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B329B6491D024CE8004B1EB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B329B6481D024CE8004B1EB0 /* AppDelegate.swift */; };
 		B329B6501D024CE8004B1EB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B329B64E1D024CE8004B1EB0 /* Main.storyboard */; };
 		B329B6521D024CE8004B1EB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B329B6511D024CE8004B1EB0 /* Assets.xcassets */; };
-		B329B65A1D024E5D004B1EB0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B329B6591D024E5D004B1EB0 /* Alamofire.framework */; };
-		B329B65B1D024E5D004B1EB0 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B329B6591D024E5D004B1EB0 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B329B65E1D0256E8004B1EB0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B329B65D1D0256E8004B1EB0 /* API.swift */; };
-		B329B6611D025BAD004B1EB0 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B329B65F1D025BAD004B1EB0 /* AlamofireObjectMapper.framework */; };
-		B329B6621D025BAD004B1EB0 /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B329B65F1D025BAD004B1EB0 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B329B6631D025BAD004B1EB0 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B329B6601D025BAD004B1EB0 /* ObjectMapper.framework */; };
-		B329B6641D025BAD004B1EB0 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B329B6601D025BAD004B1EB0 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B329B6661D025C0D004B1EB0 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B329B6651D025C0D004B1EB0 /* Tag.swift */; };
 		B3DF29ED1D04278300C5AB22 /* TagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF29EC1D04278300C5AB22 /* TagsViewController.swift */; };
 		B3DF29EF1D04309600C5AB22 /* TagViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF29EE1D04309600C5AB22 /* TagViewCell.swift */; };
-		B3DF29F11D043A1A00C5AB22 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF29F01D043A1A00C5AB22 /* AlamofireImage.framework */; };
-		B3DF29F21D043A1A00C5AB22 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF29F01D043A1A00C5AB22 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3DF2A3D1D046A6B00C5AB22 /* DouyuAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A3C1D046A6B00C5AB22 /* DouyuAPI.framework */; };
+		B3DF2A3F1D046AD400C5AB22 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A3E1D046AD400C5AB22 /* AlamofireImage.framework */; };
+		B3DF2A401D046AD400C5AB22 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A3E1D046AD400C5AB22 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3DF2A481D046AF500C5AB22 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A411D046AF500C5AB22 /* Alamofire.framework */; };
+		B3DF2A491D046AF500C5AB22 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A411D046AF500C5AB22 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3DF2A4A1D046AF500C5AB22 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A421D046AF500C5AB22 /* AlamofireObjectMapper.framework */; };
+		B3DF2A4B1D046AF500C5AB22 /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A421D046AF500C5AB22 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3DF2A4C1D046AF500C5AB22 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A431D046AF500C5AB22 /* ObjectMapper.framework */; };
+		B3DF2A4D1D046AF500C5AB22 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A431D046AF500C5AB22 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3DF2A4E1D046AF500C5AB22 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A441D046AF500C5AB22 /* RxBlocking.framework */; };
+		B3DF2A4F1D046AF500C5AB22 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A441D046AF500C5AB22 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3DF2A501D046AF500C5AB22 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A451D046AF500C5AB22 /* RxCocoa.framework */; };
+		B3DF2A511D046AF500C5AB22 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A451D046AF500C5AB22 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3DF2A521D046AF500C5AB22 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A461D046AF500C5AB22 /* RxSwift.framework */; };
+		B3DF2A531D046AF500C5AB22 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A461D046AF500C5AB22 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B329B65C1D024E5E004B1EB0 /* Embed Frameworks */ = {
+		B3DF2A3B1D046A3700C5AB22 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B329B6641D025BAD004B1EB0 /* ObjectMapper.framework in Embed Frameworks */,
-				B329B65B1D024E5D004B1EB0 /* Alamofire.framework in Embed Frameworks */,
-				B3DF29F21D043A1A00C5AB22 /* AlamofireImage.framework in Embed Frameworks */,
-				B31B065D1D02698400BADB46 /* RxSwift.framework in Embed Frameworks */,
-				B329B6621D025BAD004B1EB0 /* AlamofireObjectMapper.framework in Embed Frameworks */,
-				B31B065B1D02698400BADB46 /* RxCocoa.framework in Embed Frameworks */,
-				B31B06591D02698400BADB46 /* RxBlocking.framework in Embed Frameworks */,
+				B3DF2A511D046AF500C5AB22 /* RxCocoa.framework in Embed Frameworks */,
+				B3DF2A401D046AD400C5AB22 /* AlamofireImage.framework in Embed Frameworks */,
+				B3DF2A531D046AF500C5AB22 /* RxSwift.framework in Embed Frameworks */,
+				B3DF2A4F1D046AF500C5AB22 /* RxBlocking.framework in Embed Frameworks */,
+				B3DF2A4B1D046AF500C5AB22 /* AlamofireObjectMapper.framework in Embed Frameworks */,
+				B3DF2A4D1D046AF500C5AB22 /* ObjectMapper.framework in Embed Frameworks */,
+				B3DF2A491D046AF500C5AB22 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,22 +50,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B31B06551D02698400BADB46 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/tvOS/RxBlocking.framework; sourceTree = "<group>"; };
-		B31B06561D02698400BADB46 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/tvOS/RxCocoa.framework; sourceTree = "<group>"; };
-		B31B06571D02698400BADB46 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/tvOS/RxSwift.framework; sourceTree = "<group>"; };
 		B329B6451D024CE8004B1EB0 /* Laosiji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Laosiji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B329B6481D024CE8004B1EB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B329B64F1D024CE8004B1EB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B329B6511D024CE8004B1EB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B329B6531D024CE8004B1EB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B329B6591D024E5D004B1EB0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/tvOS/Alamofire.framework; sourceTree = "<group>"; };
-		B329B65D1D0256E8004B1EB0 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		B329B65F1D025BAD004B1EB0 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/tvOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
-		B329B6601D025BAD004B1EB0 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/tvOS/ObjectMapper.framework; sourceTree = "<group>"; };
-		B329B6651D025C0D004B1EB0 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		B3DF29EC1D04278300C5AB22 /* TagsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsViewController.swift; sourceTree = "<group>"; };
 		B3DF29EE1D04309600C5AB22 /* TagViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagViewCell.swift; sourceTree = "<group>"; };
-		B3DF29F01D043A1A00C5AB22 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/tvOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		B3DF2A3C1D046A6B00C5AB22 /* DouyuAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DouyuAPI.framework; path = "DouyuAPI/build/Debug-appletvos/DouyuAPI.framework"; sourceTree = "<group>"; };
+		B3DF2A3E1D046AD400C5AB22 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/tvOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		B3DF2A411D046AF500C5AB22 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = DouyuAPI/Carthage/Build/tvOS/Alamofire.framework; sourceTree = "<group>"; };
+		B3DF2A421D046AF500C5AB22 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = DouyuAPI/Carthage/Build/tvOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
+		B3DF2A431D046AF500C5AB22 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = DouyuAPI/Carthage/Build/tvOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		B3DF2A441D046AF500C5AB22 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = DouyuAPI/Carthage/Build/tvOS/RxBlocking.framework; sourceTree = "<group>"; };
+		B3DF2A451D046AF500C5AB22 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = DouyuAPI/Carthage/Build/tvOS/RxCocoa.framework; sourceTree = "<group>"; };
+		B3DF2A461D046AF500C5AB22 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = DouyuAPI/Carthage/Build/tvOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,13 +72,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B329B6631D025BAD004B1EB0 /* ObjectMapper.framework in Frameworks */,
-				B329B65A1D024E5D004B1EB0 /* Alamofire.framework in Frameworks */,
-				B3DF29F11D043A1A00C5AB22 /* AlamofireImage.framework in Frameworks */,
-				B31B065C1D02698400BADB46 /* RxSwift.framework in Frameworks */,
-				B329B6611D025BAD004B1EB0 /* AlamofireObjectMapper.framework in Frameworks */,
-				B31B065A1D02698400BADB46 /* RxCocoa.framework in Frameworks */,
-				B31B06581D02698400BADB46 /* RxBlocking.framework in Frameworks */,
+				B3DF2A3D1D046A6B00C5AB22 /* DouyuAPI.framework in Frameworks */,
+				B3DF2A481D046AF500C5AB22 /* Alamofire.framework in Frameworks */,
+				B3DF2A501D046AF500C5AB22 /* RxCocoa.framework in Frameworks */,
+				B3DF2A4C1D046AF500C5AB22 /* ObjectMapper.framework in Frameworks */,
+				B3DF2A521D046AF500C5AB22 /* RxSwift.framework in Frameworks */,
+				B3DF2A3F1D046AD400C5AB22 /* AlamofireImage.framework in Frameworks */,
+				B3DF2A4A1D046AF500C5AB22 /* AlamofireObjectMapper.framework in Frameworks */,
+				B3DF2A4E1D046AF500C5AB22 /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,14 +89,8 @@
 		B329B63C1D024CE8004B1EB0 = {
 			isa = PBXGroup;
 			children = (
-				B3DF29F01D043A1A00C5AB22 /* AlamofireImage.framework */,
-				B31B06551D02698400BADB46 /* RxBlocking.framework */,
-				B31B06561D02698400BADB46 /* RxCocoa.framework */,
-				B31B06571D02698400BADB46 /* RxSwift.framework */,
-				B329B65F1D025BAD004B1EB0 /* AlamofireObjectMapper.framework */,
-				B329B6601D025BAD004B1EB0 /* ObjectMapper.framework */,
-				B329B6591D024E5D004B1EB0 /* Alamofire.framework */,
 				B329B6471D024CE8004B1EB0 /* Laosiji */,
+				B3DF2A561D046B3900C5AB22 /* Frameworks */,
 				B329B6461D024CE8004B1EB0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,10 +112,23 @@
 				B329B64E1D024CE8004B1EB0 /* Main.storyboard */,
 				B329B6511D024CE8004B1EB0 /* Assets.xcassets */,
 				B329B6531D024CE8004B1EB0 /* Info.plist */,
-				B329B65D1D0256E8004B1EB0 /* API.swift */,
-				B329B6651D025C0D004B1EB0 /* Tag.swift */,
 			);
 			path = Laosiji;
+			sourceTree = "<group>";
+		};
+		B3DF2A561D046B3900C5AB22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3DF2A411D046AF500C5AB22 /* Alamofire.framework */,
+				B3DF2A421D046AF500C5AB22 /* AlamofireObjectMapper.framework */,
+				B3DF2A431D046AF500C5AB22 /* ObjectMapper.framework */,
+				B3DF2A441D046AF500C5AB22 /* RxBlocking.framework */,
+				B3DF2A451D046AF500C5AB22 /* RxCocoa.framework */,
+				B3DF2A461D046AF500C5AB22 /* RxSwift.framework */,
+				B3DF2A3E1D046AD400C5AB22 /* AlamofireImage.framework */,
+				B3DF2A3C1D046A6B00C5AB22 /* DouyuAPI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +141,7 @@
 				B329B6411D024CE8004B1EB0 /* Sources */,
 				B329B6421D024CE8004B1EB0 /* Frameworks */,
 				B329B6431D024CE8004B1EB0 /* Resources */,
-				B329B65C1D024E5E004B1EB0 /* Embed Frameworks */,
+				B3DF2A3B1D046A3700C5AB22 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,10 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B329B6661D025C0D004B1EB0 /* Tag.swift in Sources */,
 				B329B6491D024CE8004B1EB0 /* AppDelegate.swift in Sources */,
 				B3DF29EF1D04309600C5AB22 /* TagViewCell.swift in Sources */,
-				B329B65E1D0256E8004B1EB0 /* API.swift in Sources */,
 				B3DF29ED1D04278300C5AB22 /* TagsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +313,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/DouyuAPI/build/Debug-appletvos",
+					"$(PROJECT_DIR)/DouyuAPI/Carthage/Build/tvOS",
 				);
 				INFOPLIST_FILE = Laosiji/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -325,6 +331,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/DouyuAPI/build/Debug-appletvos",
+					"$(PROJECT_DIR)/DouyuAPI/Carthage/Build/tvOS",
 				);
 				INFOPLIST_FILE = Laosiji/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
