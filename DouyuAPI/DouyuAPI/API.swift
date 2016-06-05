@@ -50,6 +50,20 @@ public struct API {
         return requestArray(Router.RoomsForTag(tag: tag))
     }
     
+    private static func requestObject<T: Mappable>(router: Router) -> Observable<T> {
+        return Observable.create { observer in
+            let request = Alamofire.request(router.URLRequest).responseObject(keyPath: "data") { (response: Response<T, NSError>) in
+                if let value = response.result.value {
+                    observer.on(.Next(value))
+                    observer.on(.Completed)
+                }
+            }
+            return AnonymousDisposable {
+                request.cancel()
+            }
+        }
+    }
+    
     private static func requestArray<T: Mappable>(router: Router) -> Observable<[T]> {
         return Observable.create { observer in
             let request = Alamofire.request(router.URLRequest).responseArray(keyPath: "data") { (response: Response<[T], NSError>) in
