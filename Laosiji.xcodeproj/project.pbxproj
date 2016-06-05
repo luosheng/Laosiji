@@ -25,6 +25,7 @@
 		B329B6641D025BAD004B1EB0 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B329B6601D025BAD004B1EB0 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B329B6661D025C0D004B1EB0 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B329B6651D025C0D004B1EB0 /* Tag.swift */; };
 		B3DF29ED1D04278300C5AB22 /* TagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF29EC1D04278300C5AB22 /* TagsViewController.swift */; };
+		B3DF29EF1D04309600C5AB22 /* TagViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF29EE1D04309600C5AB22 /* TagViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,6 +62,7 @@
 		B329B6601D025BAD004B1EB0 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/tvOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		B329B6651D025C0D004B1EB0 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		B3DF29EC1D04278300C5AB22 /* TagsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsViewController.swift; sourceTree = "<group>"; };
+		B3DF29EE1D04309600C5AB22 /* TagViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				B329B6481D024CE8004B1EB0 /* AppDelegate.swift */,
 				B3DF29EC1D04278300C5AB22 /* TagsViewController.swift */,
+				B3DF29EE1D04309600C5AB22 /* TagViewCell.swift */,
 				B329B64E1D024CE8004B1EB0 /* Main.storyboard */,
 				B329B6511D024CE8004B1EB0 /* Assets.xcassets */,
 				B329B6531D024CE8004B1EB0 /* Info.plist */,
@@ -189,6 +192,7 @@
 			files = (
 				B329B6661D025C0D004B1EB0 /* Tag.swift in Sources */,
 				B329B6491D024CE8004B1EB0 /* AppDelegate.swift in Sources */,
+				B3DF29EF1D04309600C5AB22 /* TagViewCell.swift in Sources */,
 				B329B65E1D0256E8004B1EB0 /* API.swift in Sources */,
 				B3DF29ED1D04278300C5AB22 /* TagsViewController.swift in Sources */,
 			);
