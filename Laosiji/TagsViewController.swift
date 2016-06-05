@@ -11,6 +11,7 @@ import UIKit
 import RxSwift
 import AlamofireImage
 import DouyuAPI
+import AVKit
 
 class TagsViewController: UICollectionViewController {
     
@@ -58,13 +59,11 @@ class TagsViewController: UICollectionViewController {
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let tag = tags[indexPath.item]
         guard let tagID = tag.identifier else { return }
-        _ = API.fetchRoomsForTag(tagID)
-            .flatMap { rooms -> Observable<Room> in
-                guard let roomID = rooms.first?.identifier else { return Observable.empty() }
-                return API.fetchRoomForID(roomID)
+        _ = API.fetchRoomsForTag(tagID).subscribeNext { rooms in
+            if let roomID = rooms.first?.identifier {
+                let playerViewController = PlayerViewController(roomID: roomID)
+                self.presentViewController(playerViewController, animated: true, completion: nil)
             }
-            .subscribeNext { room in
-                print(room.HTTPLiveStreamingURL)
-            }
+        }
     }
 }
