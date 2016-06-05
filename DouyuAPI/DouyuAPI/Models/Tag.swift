@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 
 public class Tag: Mappable {
-    public var id: Int?
+    public var id: String?
     public var shortName: String?
     public var name: String?
     public var picName: String?
@@ -23,7 +23,7 @@ public class Tag: Mappable {
     }
     
     public func mapping(map: Map) {
-        id <- (map["tag_id"], TransformOf<Int, String>(fromJSON: { Int($0!) }, toJSON: { $0.map { String($0) } }))
+        id <- map["tag_id"]
         shortName <- map["short_name"]
         name <- map["tag_name"]
         picName <- map["pic_name"]

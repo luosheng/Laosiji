@@ -11,7 +11,7 @@ import ObjectMapper
 
 public class Room: Mappable {
     
-    public var id: Int?
+    public var id: String?
     public var src: String?
     public var name: String?
     public var nickName: String?
@@ -22,7 +22,7 @@ public class Room: Mappable {
     }
     
     public func mapping(map: Map) {
-        id <- (map["room_id"], TransformOf<Int, String>(fromJSON: { Int($0!) }, toJSON: { $0.map { String($0) } }))
+        id <- map["room_id"]
         src <- map["room_src"]
         name <- map["room_name"]
         nickName <- map["nickname"]
