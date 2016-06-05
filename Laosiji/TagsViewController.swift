@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import RxSwift
+import AlamofireImage
 
 class TagsViewController: UICollectionViewController {
     
@@ -22,7 +23,7 @@ class TagsViewController: UICollectionViewController {
         collectionView?.registerClass(TagViewCell.self, forCellWithReuseIdentifier: TagViewCell.reuseIdentifier)
         
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 400, height: 300)
+        layout.itemSize = CGSize(width: 330, height: 457.5)
         collectionView?.collectionViewLayout = layout
         
         _ = API.getColumnDetail("").subscribeNext { tags in
@@ -42,4 +43,14 @@ class TagsViewController: UICollectionViewController {
     }
     
     // MARK: - UICollectionViewDelegate
+    
+    override func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
+        guard let cell = cell as? TagViewCell else {
+            return
+        }
+        let tag = tags[indexPath.item]
+        if let picURL = tag.picURL {
+            cell.imageView.af_setImageWithURL(picURL)
+        }
+    }
 }
