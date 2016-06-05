@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 import RxSwift
 import AlamofireObjectMapper
+import ObjectMapper
 
 struct API {
     
@@ -35,13 +36,17 @@ struct API {
     }
     
     static func getColumnDetail(column: String) -> Observable<[Tag]> {
+        return requestArray(Router.GetColumnDetail(column: column))
+    }
+    
+    private static func requestArray<T: Mappable>(router: Router) -> Observable<[T]> {
         return Observable.create { observer in
-            let request = Alamofire.request(Router.GetColumnDetail(column: column)).responseArray(keyPath: "data") { (response: Response<[Tag], NSError>) in
-                if let tags = response.result.value {
-                    observer.on(.Next(tags))
+            let request = Alamofire.request(router.URLRequest).responseArray(keyPath: "data") { (response: Response<[T], NSError>) in
+                if let value = response.result.value {
+                    observer.on(.Next(value))
+                    observer.on(.Completed)
                 }
             }
-            request.resume()
             return AnonymousDisposable {
                 request.cancel()
             }
