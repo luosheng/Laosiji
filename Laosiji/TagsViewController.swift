@@ -26,7 +26,7 @@ class TagsViewController: UICollectionViewController {
         layout.itemSize = CGSize(width: 330, height: 457.5)
         collectionView?.collectionViewLayout = layout
         
-        _ = API.getColumnDetail("").subscribeNext { tags in
+        _ = API.fetchAllTags().subscribeNext { tags in
             self.tags = tags
         }
     }

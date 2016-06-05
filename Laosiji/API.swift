@@ -17,12 +17,12 @@ struct API {
     enum Router: URLRequestConvertible {
         static let baseURLString = "http://capi.douyucdn.cn/api/v1/"
         
-        case GetColumnDetail(column: String)
+        case TagsForColumn(column: String)
         
         var URLRequest: NSMutableURLRequest {
             let result: (path: String, parameters: [String: AnyObject]) = {
                 switch self {
-                case .GetColumnDetail(let column):
+                case .TagsForColumn(let column):
                     return ("getColumnDetail", ["shortName": column])
                 }
             }()
@@ -35,8 +35,12 @@ struct API {
         }
     }
     
-    static func getColumnDetail(column: String) -> Observable<[Tag]> {
-        return requestArray(Router.GetColumnDetail(column: column))
+    static func fetchTagsForColumn(column: String) -> Observable<[Tag]> {
+        return requestArray(Router.TagsForColumn(column: column))
+    }
+    
+    static func fetchAllTags() -> Observable<[Tag]> {
+        return fetchTagsForColumn("")
     }
     
     private static func requestArray<T: Mappable>(router: Router) -> Observable<[T]> {
