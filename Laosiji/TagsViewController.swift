@@ -57,7 +57,8 @@ class TagsViewController: UICollectionViewController {
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let tag = tags[indexPath.item]
-        _ = API.fetchRoomsForTag(tag).subscribeNext { rooms in
+        guard let tagID = tag.identifier else { return }
+        _ = API.fetchRoomsForTag(tagID).subscribeNext { rooms in
             rooms.forEach { room in
                 print("\(room.identifier) -> \(room.name)")
             }

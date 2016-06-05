@@ -18,15 +18,15 @@ public struct API {
         static let baseURLString = "http://capi.douyucdn.cn/api/v1/"
         
         case TagsForColumn(column: String)
-        case RoomsForTag(tag: Tag)
+        case RoomsForTag(tagID: String)
         
         var URLRequest: NSMutableURLRequest {
             let result: (path: String, parameters: [String: AnyObject]) = {
                 switch self {
                 case .TagsForColumn(let column):
                     return ("getColumnDetail", ["shortName": column])
-                case .RoomsForTag(let tag):
-                    return ("live/\(tag.identifier!)", [:])
+                case .RoomsForTag(let tagID):
+                    return ("live/\(tagID)", [:])
                 }
             }()
             
@@ -46,8 +46,8 @@ public struct API {
         return fetchTagsForColumn("")
     }
     
-    public static func fetchRoomsForTag(tag: Tag) -> Observable<[Room]> {
-        return requestArray(Router.RoomsForTag(tag: tag))
+    public static func fetchRoomsForTag(tagID: String) -> Observable<[Room]> {
+        return requestArray(Router.RoomsForTag(tagID: tagID))
     }
     
     private static func requestObject<T: Mappable>(router: Router) -> Observable<T> {
