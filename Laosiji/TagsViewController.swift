@@ -54,4 +54,13 @@ class TagsViewController: UICollectionViewController {
             cell.imageView.af_setImageWithURL(picURL)
         }
     }
+    
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let tag = tags[indexPath.item]
+        _ = API.fetchRoomsForTag(tag).subscribeNext { rooms in
+            rooms.forEach { room in
+                print("\(room.id) -> \(room.name)")
+            }
+        }
+    }
 }
