@@ -17,6 +17,7 @@
 		B3DF2A221D0466FE00C5AB22 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF2A211D0466FE00C5AB22 /* API.swift */; };
 		B3DF2A251D04671A00C5AB22 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF2A241D04671A00C5AB22 /* Tag.swift */; };
 		B3DF2A581D046B7700C5AB22 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF2A571D046B7700C5AB22 /* Room.swift */; };
+		B3DF2A5E1D048F5400C5AB22 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A5D1D048F5400C5AB22 /* CryptoSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B3DF2A211D0466FE00C5AB22 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		B3DF2A241D04671A00C5AB22 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		B3DF2A571D046B7700C5AB22 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		B3DF2A5D1D048F5400C5AB22 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/tvOS/CryptoSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 				B3DF2A121D0465CF00C5AB22 /* RxBlocking.framework in Frameworks */,
 				B3DF2A131D0465CF00C5AB22 /* RxCocoa.framework in Frameworks */,
 				B3DF2A141D0465CF00C5AB22 /* RxSwift.framework in Frameworks */,
+				B3DF2A5E1D048F5400C5AB22 /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +85,7 @@
 		B3DF2A161D0465D700C5AB22 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3DF2A5D1D048F5400C5AB22 /* CryptoSwift.framework */,
 				B3DF2A081D0465CF00C5AB22 /* Alamofire.framework */,
 				B3DF2A091D0465CF00C5AB22 /* AlamofireObjectMapper.framework */,
 				B3DF2A0A1D0465CF00C5AB22 /* ObjectMapper.framework */,

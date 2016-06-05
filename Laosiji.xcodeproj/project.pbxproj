@@ -27,6 +27,8 @@
 		B3DF2A511D046AF500C5AB22 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A451D046AF500C5AB22 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3DF2A521D046AF500C5AB22 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A461D046AF500C5AB22 /* RxSwift.framework */; };
 		B3DF2A531D046AF500C5AB22 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A461D046AF500C5AB22 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3DF2A601D048FCF00C5AB22 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A5F1D048FCF00C5AB22 /* CryptoSwift.framework */; };
+		B3DF2A611D048FCF00C5AB22 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A5F1D048FCF00C5AB22 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +45,7 @@
 				B3DF2A4B1D046AF500C5AB22 /* AlamofireObjectMapper.framework in Embed Frameworks */,
 				B3DF2A4D1D046AF500C5AB22 /* ObjectMapper.framework in Embed Frameworks */,
 				B3DF2A491D046AF500C5AB22 /* Alamofire.framework in Embed Frameworks */,
+				B3DF2A611D048FCF00C5AB22 /* CryptoSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +68,7 @@
 		B3DF2A441D046AF500C5AB22 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = DouyuAPI/Carthage/Build/tvOS/RxBlocking.framework; sourceTree = "<group>"; };
 		B3DF2A451D046AF500C5AB22 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = DouyuAPI/Carthage/Build/tvOS/RxCocoa.framework; sourceTree = "<group>"; };
 		B3DF2A461D046AF500C5AB22 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = DouyuAPI/Carthage/Build/tvOS/RxSwift.framework; sourceTree = "<group>"; };
+		B3DF2A5F1D048FCF00C5AB22 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = DouyuAPI/Carthage/Build/tvOS/CryptoSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 				B3DF2A3D1D046A6B00C5AB22 /* DouyuAPI.framework in Frameworks */,
 				B3DF2A481D046AF500C5AB22 /* Alamofire.framework in Frameworks */,
 				B3DF2A501D046AF500C5AB22 /* RxCocoa.framework in Frameworks */,
+				B3DF2A601D048FCF00C5AB22 /* CryptoSwift.framework in Frameworks */,
 				B3DF2A4C1D046AF500C5AB22 /* ObjectMapper.framework in Frameworks */,
 				B3DF2A521D046AF500C5AB22 /* RxSwift.framework in Frameworks */,
 				B3DF2A3F1D046AD400C5AB22 /* AlamofireImage.framework in Frameworks */,
@@ -119,6 +124,7 @@
 		B3DF2A561D046B3900C5AB22 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3DF2A5F1D048FCF00C5AB22 /* CryptoSwift.framework */,
 				B3DF2A411D046AF500C5AB22 /* Alamofire.framework */,
 				B3DF2A421D046AF500C5AB22 /* AlamofireObjectMapper.framework */,
 				B3DF2A431D046AF500C5AB22 /* ObjectMapper.framework */,
