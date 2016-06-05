@@ -16,6 +16,7 @@ public class Room: Mappable {
     public var name: String?
     public var nickName: String?
     public var onlineNumber: Int?
+    public var HTTPLiveStreamingURL: NSURL?
     
     required public init?(_ map: Map) {
         
@@ -27,6 +28,7 @@ public class Room: Mappable {
         name <- map["room_name"]
         nickName <- map["nickname"]
         onlineNumber <- map["online"]
+        HTTPLiveStreamingURL <- (map["hls_url"], URLTransform())
     }
     
 }
