@@ -22,7 +22,11 @@ class RoomsViewController: UICollectionViewController {
     
     init(tagID: String) {
         self.tagID = tagID
-        super.init(nibName: nil, bundle: nil)
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: 320, height: 180)
+    
+        super.init(collectionViewLayout: layout)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -31,10 +35,6 @@ class RoomsViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         collectionView?.registerClass(RoomViewCell.self, forCellWithReuseIdentifier: RoomViewCell.reuseIdentifier)
-        
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 320, height: 180)
-        collectionView?.collectionViewLayout = layout
         
         _ = API.fetchRoomsForTag(tagID).subscribeNext { rooms in
             self.rooms = rooms
