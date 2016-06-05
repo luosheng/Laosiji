@@ -26,6 +26,8 @@
 		B329B6661D025C0D004B1EB0 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B329B6651D025C0D004B1EB0 /* Tag.swift */; };
 		B3DF29ED1D04278300C5AB22 /* TagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF29EC1D04278300C5AB22 /* TagsViewController.swift */; };
 		B3DF29EF1D04309600C5AB22 /* TagViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF29EE1D04309600C5AB22 /* TagViewCell.swift */; };
+		B3DF29F11D043A1A00C5AB22 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF29F01D043A1A00C5AB22 /* AlamofireImage.framework */; };
+		B3DF29F21D043A1A00C5AB22 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF29F01D043A1A00C5AB22 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,7 @@
 			files = (
 				B329B6641D025BAD004B1EB0 /* ObjectMapper.framework in Embed Frameworks */,
 				B329B65B1D024E5D004B1EB0 /* Alamofire.framework in Embed Frameworks */,
+				B3DF29F21D043A1A00C5AB22 /* AlamofireImage.framework in Embed Frameworks */,
 				B31B065D1D02698400BADB46 /* RxSwift.framework in Embed Frameworks */,
 				B329B6621D025BAD004B1EB0 /* AlamofireObjectMapper.framework in Embed Frameworks */,
 				B31B065B1D02698400BADB46 /* RxCocoa.framework in Embed Frameworks */,
@@ -63,6 +66,7 @@
 		B329B6651D025C0D004B1EB0 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		B3DF29EC1D04278300C5AB22 /* TagsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsViewController.swift; sourceTree = "<group>"; };
 		B3DF29EE1D04309600C5AB22 /* TagViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagViewCell.swift; sourceTree = "<group>"; };
+		B3DF29F01D043A1A00C5AB22 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/tvOS/AlamofireImage.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 			files = (
 				B329B6631D025BAD004B1EB0 /* ObjectMapper.framework in Frameworks */,
 				B329B65A1D024E5D004B1EB0 /* Alamofire.framework in Frameworks */,
+				B3DF29F11D043A1A00C5AB22 /* AlamofireImage.framework in Frameworks */,
 				B31B065C1D02698400BADB46 /* RxSwift.framework in Frameworks */,
 				B329B6611D025BAD004B1EB0 /* AlamofireObjectMapper.framework in Frameworks */,
 				B31B065A1D02698400BADB46 /* RxCocoa.framework in Frameworks */,
@@ -85,6 +90,7 @@
 		B329B63C1D024CE8004B1EB0 = {
 			isa = PBXGroup;
 			children = (
+				B3DF29F01D043A1A00C5AB22 /* AlamofireImage.framework */,
 				B31B06551D02698400BADB46 /* RxBlocking.framework */,
 				B31B06561D02698400BADB46 /* RxCocoa.framework */,
 				B31B06571D02698400BADB46 /* RxSwift.framework */,
