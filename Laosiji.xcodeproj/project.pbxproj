@@ -30,6 +30,8 @@
 		B3DF2A601D048FCF00C5AB22 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A5F1D048FCF00C5AB22 /* CryptoSwift.framework */; };
 		B3DF2A611D048FCF00C5AB22 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A5F1D048FCF00C5AB22 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3DF2A631D04E34800C5AB22 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF2A621D04E34800C5AB22 /* PlayerViewController.swift */; };
+		B3DF2A651D04E78B00C5AB22 /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF2A641D04E78B00C5AB22 /* RoomsViewController.swift */; };
+		B3DF2A671D04E79D00C5AB22 /* RoomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF2A661D04E79D00C5AB22 /* RoomViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,6 +73,8 @@
 		B3DF2A461D046AF500C5AB22 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = DouyuAPI/Carthage/Build/tvOS/RxSwift.framework; sourceTree = "<group>"; };
 		B3DF2A5F1D048FCF00C5AB22 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = DouyuAPI/Carthage/Build/tvOS/CryptoSwift.framework; sourceTree = "<group>"; };
 		B3DF2A621D04E34800C5AB22 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		B3DF2A641D04E78B00C5AB22 /* RoomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
+		B3DF2A661D04E79D00C5AB22 /* RoomViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				B329B6481D024CE8004B1EB0 /* AppDelegate.swift */,
 				B3DF29EC1D04278300C5AB22 /* TagsViewController.swift */,
 				B3DF29EE1D04309600C5AB22 /* TagViewCell.swift */,
+				B3DF2A641D04E78B00C5AB22 /* RoomsViewController.swift */,
+				B3DF2A661D04E79D00C5AB22 /* RoomViewCell.swift */,
 				B3DF2A621D04E34800C5AB22 /* PlayerViewController.swift */,
 				B329B64E1D024CE8004B1EB0 /* Main.storyboard */,
 				B329B6511D024CE8004B1EB0 /* Assets.xcassets */,
@@ -213,8 +219,10 @@
 			files = (
 				B329B6491D024CE8004B1EB0 /* AppDelegate.swift in Sources */,
 				B3DF2A631D04E34800C5AB22 /* PlayerViewController.swift in Sources */,
+				B3DF2A651D04E78B00C5AB22 /* RoomsViewController.swift in Sources */,
 				B3DF29EF1D04309600C5AB22 /* TagViewCell.swift in Sources */,
 				B3DF29ED1D04278300C5AB22 /* TagsViewController.swift in Sources */,
+				B3DF2A671D04E79D00C5AB22 /* RoomViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
