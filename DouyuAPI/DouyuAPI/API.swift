@@ -35,7 +35,7 @@ public struct API {
             }()
             
             let timestamp = Int(NSDate().timeIntervalSince1970)
-            var path = "\(result.path)?aid=android&clientsys=android&time=\(timestamp)"
+            let path = "\(result.path)?aid=android&clientsys=android&time=\(timestamp)"
             let auth = "\(path)1231".md5()
             
             var p = result.parameters
