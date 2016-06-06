@@ -1,4 +1,1 @@
-github "Alamofire/Alamofire" ~> 3.4
-github "tristanhimmelman/AlamofireObjectMapper" ~> 3.0
-github "ReactiveX/RxSwift" ~> 2.0
 github "Alamofire/AlamofireImage" ~> 2.0
