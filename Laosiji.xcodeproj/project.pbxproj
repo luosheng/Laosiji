@@ -10,6 +10,8 @@
 		B329B6491D024CE8004B1EB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B329B6481D024CE8004B1EB0 /* AppDelegate.swift */; };
 		B329B6501D024CE8004B1EB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B329B64E1D024CE8004B1EB0 /* Main.storyboard */; };
 		B329B6521D024CE8004B1EB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B329B6511D024CE8004B1EB0 /* Assets.xcassets */; };
+		B358230E1D055D3E0064CD21 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B358230D1D055D3E0064CD21 /* CocoaAsyncSocket.framework */; };
+		B358230F1D055D3E0064CD21 /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B358230D1D055D3E0064CD21 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3DF29ED1D04278300C5AB22 /* TagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF29EC1D04278300C5AB22 /* TagsViewController.swift */; };
 		B3DF29EF1D04309600C5AB22 /* TagViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF29EE1D04309600C5AB22 /* TagViewCell.swift */; };
 		B3DF2A3D1D046A6B00C5AB22 /* DouyuAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A3C1D046A6B00C5AB22 /* DouyuAPI.framework */; };
@@ -41,6 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B358230F1D055D3E0064CD21 /* CocoaAsyncSocket.framework in Embed Frameworks */,
 				B3DF2A511D046AF500C5AB22 /* RxCocoa.framework in Embed Frameworks */,
 				B3DF2A401D046AD400C5AB22 /* AlamofireImage.framework in Embed Frameworks */,
 				B3DF2A531D046AF500C5AB22 /* RxSwift.framework in Embed Frameworks */,
@@ -61,6 +64,7 @@
 		B329B64F1D024CE8004B1EB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B329B6511D024CE8004B1EB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B329B6531D024CE8004B1EB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B358230D1D055D3E0064CD21 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = DouyuAPI/Carthage/Build/tvOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
 		B3DF29EC1D04278300C5AB22 /* TagsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsViewController.swift; sourceTree = "<group>"; };
 		B3DF29EE1D04309600C5AB22 /* TagViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagViewCell.swift; sourceTree = "<group>"; };
 		B3DF2A3C1D046A6B00C5AB22 /* DouyuAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DouyuAPI.framework; path = "DouyuAPI/build/Debug-appletvos/DouyuAPI.framework"; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 			files = (
 				B3DF2A3D1D046A6B00C5AB22 /* DouyuAPI.framework in Frameworks */,
 				B3DF2A481D046AF500C5AB22 /* Alamofire.framework in Frameworks */,
+				B358230E1D055D3E0064CD21 /* CocoaAsyncSocket.framework in Frameworks */,
 				B3DF2A501D046AF500C5AB22 /* RxCocoa.framework in Frameworks */,
 				B3DF2A601D048FCF00C5AB22 /* CryptoSwift.framework in Frameworks */,
 				B3DF2A4C1D046AF500C5AB22 /* ObjectMapper.framework in Frameworks */,
@@ -133,6 +138,7 @@
 		B3DF2A561D046B3900C5AB22 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B358230D1D055D3E0064CD21 /* CocoaAsyncSocket.framework */,
 				B3DF2A5F1D048FCF00C5AB22 /* CryptoSwift.framework */,
 				B3DF2A411D046AF500C5AB22 /* Alamofire.framework */,
 				B3DF2A421D046AF500C5AB22 /* AlamofireObjectMapper.framework */,

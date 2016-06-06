@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B358230C1D055C1B0064CD21 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B358230B1D055C1B0064CD21 /* CocoaAsyncSocket.framework */; };
 		B3DF2A011D04639800C5AB22 /* DouyuAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = B3DF2A001D04639800C5AB22 /* DouyuAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3DF2A0F1D0465CF00C5AB22 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A081D0465CF00C5AB22 /* Alamofire.framework */; };
 		B3DF2A101D0465CF00C5AB22 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A091D0465CF00C5AB22 /* AlamofireObjectMapper.framework */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B358230B1D055C1B0064CD21 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/tvOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
 		B3DF29FD1D04639800C5AB22 /* DouyuAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DouyuAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3DF2A001D04639800C5AB22 /* DouyuAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DouyuAPI.h; sourceTree = "<group>"; };
 		B3DF2A021D04639800C5AB22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 				B3DF2A131D0465CF00C5AB22 /* RxCocoa.framework in Frameworks */,
 				B3DF2A141D0465CF00C5AB22 /* RxSwift.framework in Frameworks */,
 				B3DF2A5E1D048F5400C5AB22 /* CryptoSwift.framework in Frameworks */,
+				B358230C1D055C1B0064CD21 /* CocoaAsyncSocket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 		B3DF2A161D0465D700C5AB22 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B358230B1D055C1B0064CD21 /* CocoaAsyncSocket.framework */,
 				B3DF2A5D1D048F5400C5AB22 /* CryptoSwift.framework */,
 				B3DF2A081D0465CF00C5AB22 /* Alamofire.framework */,
 				B3DF2A091D0465CF00C5AB22 /* AlamofireObjectMapper.framework */,
