@@ -8,6 +8,7 @@
 
 import Foundation
 import CocoaAsyncSocket
+import ObjectMapper
 
 public class BulletScreen: GCDAsyncSocketDelegate {
     
@@ -16,6 +17,10 @@ public class BulletScreen: GCDAsyncSocketDelegate {
         case Join
         case Sync
         case General
+    }
+    
+    enum ResponseType: String {
+        case Chat = "chatmsg"
     }
     
     struct Constants {
@@ -46,8 +51,15 @@ public class BulletScreen: GCDAsyncSocketDelegate {
     }
     
     @objc public func socket(sock: GCDAsyncSocket!, didReadData data: NSData!, withTag tag: Int) {
-        if let dict = parseResponse(data) {
-            print(dict)
+        if let dict = parseResponse(data),
+            rawType = dict["type"],
+            type = ResponseType(rawValue: rawType) {
+            switch type {
+            case .Chat:
+                let message = Mapper<BulletMessage>().map(dict)
+            default:
+                break
+            }
         }
         
         guard let t = Tag(rawValue: tag) else {

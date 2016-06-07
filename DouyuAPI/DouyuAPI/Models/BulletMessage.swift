@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-public class BulletMessage: Mappable {
+public class BulletMessage: Mappable, CustomDebugStringConvertible {
     
     public var text: String?
     public var name: String?
@@ -23,6 +23,10 @@ public class BulletMessage: Mappable {
         text <- map["txt"]
         name <- map["nn"]
         level <- map["level"]
+    }
+    
+    public var debugDescription: String {
+        return "\(name): \(text)"
     }
     
 }
