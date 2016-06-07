@@ -14,11 +14,17 @@ public class BulletScreen: GCDAsyncSocketDelegate {
     enum Tag: Int {
         case Login = 1
         case Join
+        case Sync
         case General
+    }
+    
+    struct Constants {
+        static let syncTimeInterval: NSTimeInterval = 45
     }
     
     let roomID: String
     var socket: GCDAsyncSocket!
+    var syncTimer: NSTimer?
     
     public init(roomID: String) {
         self.roomID = roomID
@@ -30,6 +36,9 @@ public class BulletScreen: GCDAsyncSocketDelegate {
     @objc public func socket(sock: GCDAsyncSocket!, didConnectToHost host: String!, port: UInt16) {
         let loginCommand = "type@=loginreq/roomid@=\(roomID)/"
         sendCommandTo(sock, command: loginCommand, tag: .Login)
+        
+        syncTimer = NSTimer(timeInterval: Constants.syncTimeInterval, target: self, selector: #selector(sync), userInfo: nil, repeats: true)
+        syncTimer?.fire()
     }
     
     @objc public func socketDidDisconnect(sock: GCDAsyncSocket!, withError err: NSError!) {
@@ -54,6 +63,11 @@ public class BulletScreen: GCDAsyncSocketDelegate {
         }
         
         sock.readDataWithTimeout(-1, tag: Tag.General.rawValue)
+    }
+    
+    @objc func sync(timer: NSTimer) {
+        let syncCommand = "type@=keeplive/tick@=\(Int(NSDate().timeIntervalSince1970))/"
+        sendCommandTo(socket, command: syncCommand, tag: .Sync)
     }
     
     private func parseResponse(data: NSData) -> [String:String]? {
