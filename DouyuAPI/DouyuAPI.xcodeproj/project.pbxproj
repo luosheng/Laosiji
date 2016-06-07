@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B358230C1D055C1B0064CD21 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B358230B1D055C1B0064CD21 /* CocoaAsyncSocket.framework */; };
+		B35823111D055D7D0064CD21 /* BulletScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35823101D055D7D0064CD21 /* BulletScreen.swift */; };
 		B3DF2A011D04639800C5AB22 /* DouyuAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = B3DF2A001D04639800C5AB22 /* DouyuAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3DF2A0F1D0465CF00C5AB22 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A081D0465CF00C5AB22 /* Alamofire.framework */; };
 		B3DF2A101D0465CF00C5AB22 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DF2A091D0465CF00C5AB22 /* AlamofireObjectMapper.framework */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		B358230B1D055C1B0064CD21 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/tvOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		B35823101D055D7D0064CD21 /* BulletScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletScreen.swift; sourceTree = "<group>"; };
 		B3DF29FD1D04639800C5AB22 /* DouyuAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DouyuAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3DF2A001D04639800C5AB22 /* DouyuAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DouyuAPI.h; sourceTree = "<group>"; };
 		B3DF2A021D04639800C5AB22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				B3DF2A231D04671A00C5AB22 /* Models */,
 				B3DF2A211D0466FE00C5AB22 /* API.swift */,
+				B35823101D055D7D0064CD21 /* BulletScreen.swift */,
 				B3DF2A001D04639800C5AB22 /* DouyuAPI.h */,
 				B3DF2A021D04639800C5AB22 /* Info.plist */,
 			);
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3DF2A251D04671A00C5AB22 /* Tag.swift in Sources */,
+				B35823111D055D7D0064CD21 /* BulletScreen.swift in Sources */,
 				B3DF2A221D0466FE00C5AB22 /* API.swift in Sources */,
 				B3DF2A581D046B7700C5AB22 /* Room.swift in Sources */,
 			);
