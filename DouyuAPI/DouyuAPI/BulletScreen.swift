@@ -37,10 +37,9 @@ public class BulletScreen: GCDAsyncSocketDelegate {
     }
     
     @objc public func socket(sock: GCDAsyncSocket!, didReadData data: NSData!, withTag tag: Int) {
-        let subdata = data.subdataWithRange(NSRange(location: 12, length: data.length - 12))
-        let response = String(data: subdata, encoding: NSUTF8StringEncoding)
-        
-        print(response)
+        if let dict = parseResponse(data) {
+            print(dict)
+        }
         
         guard let t = Tag(rawValue: tag) else {
             return
@@ -55,6 +54,22 @@ public class BulletScreen: GCDAsyncSocketDelegate {
         }
         
         sock.readDataWithTimeout(-1, tag: Tag.General.rawValue)
+    }
+    
+    private func parseResponse(data: NSData) -> [String:String]? {
+        let subdata = data.subdataWithRange(NSRange(location: 12, length: data.length - 12))
+        if let response = String(data: subdata, encoding: NSUTF8StringEncoding) {
+            let segs = response.componentsSeparatedByString("/")
+            var dict: [String:String] = [:]
+            segs.forEach { seg in
+                let pair = seg.componentsSeparatedByString("@=")
+                if pair.count == 2 {
+                    dict[pair[0]] = pair[1]
+                }
+            }
+            return dict
+        }
+        return nil
     }
     
     private func toBytes(str: String) -> NSData {
