@@ -10,14 +10,17 @@ import Foundation
 import AVKit
 import DouyuAPI
 
-class PlayerViewController: UIViewController {
+class PlayerViewController: UIViewController, BulletScreenDelegate {
     
     let roomID: String
     var room: Room?
+    let bulletScreen: BulletScreen
     
     init(roomID: String) {
         self.roomID = roomID
+        bulletScreen = BulletScreen(roomID: roomID)
         super.init(nibName: nil, bundle: nil)
+        bulletScreen.delegate = self
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -45,6 +48,10 @@ class PlayerViewController: UIViewController {
         view.layer.addSublayer(playerLayer)
         
         player.play()
+    }
+    
+    func didReceiveBulletMessage(message: BulletMessage) {
+        print(message)
     }
     
 }

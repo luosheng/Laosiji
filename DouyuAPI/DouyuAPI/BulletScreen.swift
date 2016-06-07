@@ -10,6 +10,12 @@ import Foundation
 import CocoaAsyncSocket
 import ObjectMapper
 
+public protocol BulletScreenDelegate {
+    
+    func didReceiveBulletMessage(message: BulletMessage)
+    
+}
+
 public class BulletScreen: GCDAsyncSocketDelegate {
     
     enum Tag: Int {
@@ -30,6 +36,8 @@ public class BulletScreen: GCDAsyncSocketDelegate {
     let roomID: String
     var socket: GCDAsyncSocket!
     var syncTimer: NSTimer?
+    
+    public var delegate: BulletScreenDelegate?
     
     public init(roomID: String) {
         self.roomID = roomID
@@ -56,7 +64,9 @@ public class BulletScreen: GCDAsyncSocketDelegate {
             type = ResponseType(rawValue: rawType) {
             switch type {
             case .Chat:
-                let message = Mapper<BulletMessage>().map(dict)
+                if let message = Mapper<BulletMessage>().map(dict) {
+                    delegate?.didReceiveBulletMessage(message)
+                }
             default:
                 break
             }
